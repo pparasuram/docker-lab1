@@ -26,6 +26,7 @@ while getopts 'h?p:d:' OPTION; do
       ;;
   esac
 done
+# following pushes last arguments into $1 and $2 etc
 shift "$(($OPTIND -1))"
 # echo "arguments at the end are: $1 and: $2"
 if [ -z "$1"  ]
